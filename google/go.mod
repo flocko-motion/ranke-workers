@@ -3,7 +3,7 @@ module github.com/flocko-motion/ranke-workers/google
 go 1.26.2
 
 require (
-	github.com/flocko-motion/rankedb v1.6.0
+	github.com/flocko-motion/rankedb v1.7.0
 	github.com/spf13/cobra v1.10.2
 )
 

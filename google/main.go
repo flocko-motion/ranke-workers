@@ -92,5 +92,10 @@ func run(server string, dryRun bool, verbose bool) error {
 		}
 	}
 
+	// Phase 2: Normalize VCF contacts into text/ranke
+	if err := contacts.Normalize(ctx, client, configID, runID); err != nil {
+		return fmt.Errorf("normalize contacts: %w", err)
+	}
+
 	return nil
 }
